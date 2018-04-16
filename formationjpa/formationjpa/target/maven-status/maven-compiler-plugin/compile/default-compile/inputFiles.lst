@@ -1,0 +1,15 @@
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/formationjpa/formationjpa/App.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/CarPoolingModule.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/User.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/MusicGenre.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/Playlist.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/Module.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/Event.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/PlaylistModule.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/CarPooling.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/PicturesModule.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/Picture.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/BringModule.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/TypeOfBring.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/model/Comment.java
+/home/formation/workspace/formationjpa/formationjpa/src/main/java/com/aplose/smooss/services/EventService.java
