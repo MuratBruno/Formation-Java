@@ -49,7 +49,7 @@ public class TraitFormServlet extends HttpServlet {
 		String password 	= request.getParameter("password");
 		String passwordConfirm 	= request.getParameter("passwordConfirm");
 		response.getWriter()
-				.append("Bonjour, nous avons bien reçu votre inscription votre mail est : " + email
+				.append("Bonjour, nous avons bien reÃ§u votre inscription votre mail est : " + email
 						+ " votre pseudo est : " + pseudo + ". Votre password : " + password
 						+ ". Votre confirmation de password : " + passwordConfirm);
 	}
