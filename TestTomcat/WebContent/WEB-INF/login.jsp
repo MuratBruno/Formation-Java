@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="login.do">
+<form action="login.do" method="post">
 			<div class="modal-content">
 
 				<div class="modal-header">
@@ -18,8 +18,6 @@
 				</div>
 
 				<div class="modal-body">
-
-					<form>
 
 						<div class="form-group">
 
@@ -59,7 +57,7 @@
 
 						</div>
 
-					</form>
+
 
 					<hr class="hr-text" data-content="OU">
 
