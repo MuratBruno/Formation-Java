@@ -11,4 +11,6 @@
 PAGE PRINCIPALE !!!
 
 <br>
-<a href="logout.do?actionName=logout.do">Se déconnecter</a>
+<form action="index.jsp" method="post">
+  <button type="submit" name="your_name" value="index.jsp" class="btn-link">Retour Login</button>
+</form>

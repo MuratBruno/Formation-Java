@@ -10,6 +10,8 @@
 <body>
 DISCONNECTED
 <br>
-<a href="index.jsp">Retour vers login</a>
+<form action="index.jsp" method="post">
+  <button type="submit" name="your_name" value="index.jsp" class="btn-link">Retour Login</button>
+</form>
 </body>
 </html>
