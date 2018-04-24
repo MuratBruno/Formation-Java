@@ -1,5 +1,6 @@
 package com.aplose.actions;
 
+import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 import com.aplose.Person;
 
@@ -12,8 +13,13 @@ public class Register extends ActionSupport {
 
     public String execute() throws Exception {
         //call Service class to store personBean's state in database
-        
-        return SUCCESS;
+        if (personBean != null) {
+        	return Action.SUCCESS;
+        }
+        else {
+        	return Action.ERROR;
+        }
+
     }
     
     public Person getPersonBean() {

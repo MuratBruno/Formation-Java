@@ -8,16 +8,13 @@
 		value="false" />
 	<constant name="struts.devMode" value="true" />
 
-	<package name="actions">
+	<package name="Authentif" extends="struts-default" strict-method-invocation="true" namespace="/">
 		<action name="register" class="com.aplose.actions.Register">
-			<result name="success">/thankyou.jsp</result>
-			<result name="error">/error.jsp</result>
+			<result name="success">/WEB-INF/thankyou.jsp</result>
+			<result name="error">/WEB-INF/error.jsp</result>
 		</action>
 		<action name="registration">
-			<result name="success">/register.jsp</result>
-		</action>
-		<action name="index">
-			<result>/index.jsp</result>
+			<result name="success">/WEB-INF/register.jsp</result>
 		</action>
 
 	</package>

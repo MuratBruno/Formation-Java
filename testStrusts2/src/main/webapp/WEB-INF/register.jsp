@@ -15,8 +15,7 @@
 		<s:textfield name="personBean.lastName" label="Last name" />
 		<s:textfield name="personBean.email" label="Email" />
 		<s:textfield name="personBean.age" label="Age" />
-		<s:submit id="submitId" value="Submit" />
-		<s:submit id="showId" method="showTest" value="Show" />
+		<s:submit value="Submit" />
 	</s:form>
 </body>
 </html>
