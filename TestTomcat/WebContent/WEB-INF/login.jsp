@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,80 +8,80 @@
 </head>
 <body>
 
-<form action="login.do" method="post">
-			<div class="modal-content">
+	<form action="login.do" method="post">
+		<div class="modal-content">
 
-				<div class="modal-header">
+			<div class="modal-header">
 
-					<h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
 
-				</div>
+			</div>
 
-				<div class="modal-body">
+			<div class="modal-body">
 
-						<div class="form-group">
+				<div class="form-group">
 
-							<div class="input-group">
+					<div class="input-group">
 
-								<div class="input-group-prepend">
+						<div class="input-group-prepend">
 
-									<div class="input-group-text">
-										<i class="fas fa-user"></i>
-									</div>
-
-								</div>
-
-								<input type="text" class="form-control" name="email" id=""
-									placeholder="Adresse mail | Pseudo" class="input_modal">
-
+							<div class="input-group-text">
+								<i class="fas fa-user"></i>
 							</div>
 
 						</div>
 
-						<div class="form-group">
-
-							<div class="input-group">
-
-								<div class="input-group-prepend">
-
-									<div class="input-group-text">
-										<i class="fas fa-lock"></i>
-									</div>
-
-								</div>
-
-								<input type="text" class="form-control" name="password" id=""
-									placeholder="Mot de passe" class="input_modal">
-
-							</div>
-
-						</div>
-
-
-
-					<hr class="hr-text" data-content="OU">
-
-					<div class="justify-content-center" id="delete_it_later_block_img">
-
-						<img src="img/connexion-RS.png">
+						<input type="text" class="form-control" name="email" id=""
+							class="input_modal">
 
 					</div>
 
 				</div>
 
-				<div class="modal-footer justify-content-center">
+				<div class="form-group">
 
-					<a href="home_user.php" style="width: 100%;">
+					<div class="input-group">
 
-						<button type="submit" class="btn button_submit_modal"
-							id="button_submit_connexion_modal">Connexion !</button>
+						<div class="input-group-prepend">
 
-					</a>
+							<div class="input-group-text">
+								<i class="fas fa-lock"></i>
+							</div>
+
+						</div>
+
+						<input type="text" class="form-control" name="password" id=""
+							class="input_modal">
+
+					</div>
+
+				</div>
+
+
+
+				<hr class="hr-text" data-content="OU">
+
+				<div class="justify-content-center" id="delete_it_later_block_img">
+
+					<img src="img/connexion-RS.png">
 
 				</div>
 
 			</div>
-</form>
+
+			<div class="modal-footer justify-content-center">
+
+				<a href="home_user.php" style="width: 100%;">
+
+					<button type="submit" class="btn button_submit_modal"
+						id="button_submit_connexion_modal">Connexion !</button>
+
+				</a>
+
+			</div>
+
+		</div>
+	</form>
 
 </body>
 </html>
