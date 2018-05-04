@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="com.aplose"></context:component-scan>
+	
+	
+	<bean id="iMessageService" class="com.aplose.spring.Hello.MessageServiceMock"></bean>
+	<bean id="messagePrinter" class="com.aplose.spring.TestSpringMaven.MessagePrinter">
+		<constructor-arg ref="iMessageService"></constructor-arg>
+	</bean>
+	
+	
+	<bean id="app" class="com.aplose.spring.TestSpringMaven.App"></bean>
+	<bean id="app2" class="com.aplose.spring.app.MyApp">
+		<property name="users">
+			<list>
+				<ref bean="admin"/>
+			</list>
+		</property>
+	</bean>	
+	
+	<bean id="admin" class="com.aplose.spring.app.User">
+		<property name="firstname" value="Thomas"></property>
+		<property name="lastname" value="Gonzalez"></property>
+		<property name="login" value="Twikey"></property>
+		<property name="password" value="toto"></property>
+	</bean>
+	
+	<bean id="dependency" class="com.aplose.spring.app.Dependency" scope="prototype"></bean>
+	
+	<bean id="constructorInjection" class="com.aplose.spring.app.ConstructorInjection">
+		<constructor-arg ref="dependency"></constructor-arg>
+	</bean>
+	
+	<bean id="setterInjection" class="com.aplose.spring.app.SetterInjection">
+		<property name="dependency" ref="dependency"></property>
+	</bean>
+	
+	<bean id="setterInjectionFille" class="com.aplose.spring.app.SetterInjectionFille" parent="setterInjection">
+		<property name="name" value="Twikey"></property>
+	</bean> 
+
+	
+	<bean id="autowiredInjection" class="com.aplose.spring.app.AutowiredInjection" autowire="byName"></bean>
+	
+	<bean id="jcvdAware" class="com.aplose.spring.app.JCVDAware"></bean>
+	
+	<bean id="messageDigestFactoryBean" class="com.aplose.spring.app.MessageDigestFactoryBean"></bean>
+	
+	<bean id="consoleWriter" class="com.aplose.spring.app.ConsoleWriter"></bean>
+	
+</beans>
