@@ -33,10 +33,10 @@ public class User {
     @Id
     @GeneratedValue
     private Integer id;
-    @NotNull
+    @NotNull(message = "Le login ne peut pas être vide")
     @Size(min = 2, max = 60)
     private String login;
-    @NotNull
+    @NotNull(message = "Le mot de passe ne peut pas être vide")
     @Size(min = 2, max = 60)
     private String pwd;
 
