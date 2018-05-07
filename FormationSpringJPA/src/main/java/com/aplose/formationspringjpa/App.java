@@ -43,10 +43,6 @@ public class App {
         for (ConstraintViolation<User> constraintViolation : set) {
             System.out.println(constraintViolation.getMessage());
         }
-            
-        
-        
-        
-
+        ctx.close();
     }
 }

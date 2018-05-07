@@ -4,7 +4,6 @@
  */
 package com.aplose.formationspringjpa;
 
-import java.util.HashSet;
 import java.util.Set;
 import javax.validation.ConstraintViolation;
 import javax.validation.Validator;

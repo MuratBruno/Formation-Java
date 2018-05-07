@@ -6,8 +6,6 @@ package com.aplose.formationspringjpa;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import org.springframework.context.annotation.Bean;
-import org.springframework.transaction.annotation.Transactional;
 
 
 /**
